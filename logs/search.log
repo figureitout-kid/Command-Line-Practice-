@@ -1,0 +1,197 @@
+Search application started
+Search application started
+Search application started
+Search application started
+Search application started
+Search application started
+Search application started
+SearchDomain created: [file1.txt, file4.txt, file6.dat, file3.dat, file2.doc, file5.doc]
+Search application started
+SearchDomain created: file1.txt
+file4.txt
+file6.dat
+file3.dat
+file2.doc
+file5.doc
+
+Search application started
+SearchDomain created: [file1.txt, file4.txt, file6.dat, file3.dat, file2.doc, file5.doc]
+Search application started
+SearchDomain created: [file1.txt, file4.txt, file6.dat, file3.dat, file2.doc, file5.doc]
+Complete index: file1txt:[0-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file6dat:[2-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file6dat:[2-0]
+file3dat:[3-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file6dat:[2-0]
+file3dat:[3-0]
+file2doc:[4-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file5doc:[5-0]
+file6dat:[2-0]
+file3dat:[3-0]
+file2doc:[4-0]
+
+Search application started
+SearchDomain created: [file1.txt, file4.txt, file6.dat, file3.dat, file2.doc, file5.doc]
+Complete index: file1txt:[0-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file6dat:[2-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file6dat:[2-0]
+file3dat:[3-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file6dat:[2-0]
+file3dat:[3-0]
+file2doc:[4-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file5doc:[5-0]
+file6dat:[2-0]
+file3dat:[3-0]
+file2doc:[4-0]
+
+Search application started
+SearchDomain created: file1.txt
+file4.txt
+file6.dat
+file3.dat
+file2.doc
+file5.doc
+
+Complete index: file1txt:[0-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file6dat:[2-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file6dat:[2-0]
+file3dat:[3-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file6dat:[2-0]
+file3dat:[3-0]
+file2doc:[4-0]
+
+Complete index: file4txt:[1-0]
+file1txt:[0-0]
+file5doc:[5-0]
+file6dat:[2-0]
+file3dat:[3-0]
+file2doc:[4-0]
+
+Search application started
+SearchDomain created: file1.txt
+file4.txt
+file6.dat
+file3.dat
+file2.doc
+file5.doc
+
+Complete index of words: small:[0-5]
+prefer:[0-11]
+line:[0-8, 0-10, 0-9, 0-13, 0-2]
+gold:[0-3]
+confused:[0-1, 0-10]
+across:[0-3, 0-10]
+that:[0-8]
+not:[0-3, 0-4, 0-7]
+appreciate:[0-8]
+and:[0-5]
+does:[0-6]
+chipmunk:[0-2, 0-1, 0-13]
+by:[0-5]
+scampers:[0-2, 0-5]
+baffled:[0-4]
+if:[0-9]
+you:[0-10]
+striped:[0-1, 0-7, 0-6]
+a:[0-0, 0-4, 0-11, 0-7, 0-0, 0-3, 0-12]
+or:[0-7]
+king:[0-11]
+like:[0-6]
+was:[0-3]
+telephone:[0-5, 0-4, 0-8, 0-12, 0-1]
+is:[0-2, 0-2]
+being:[0-9]
+the:[0-0, 0-4, 0-0, 0-9, 0-0, 0-6, 0-0]
+with:[0-2, 0-11]
+squirrel:[0-1, 0-7, 0-8, 0-1, 0-4]
+wire:[0-6, 0-5]
+belongs:[0-6]
+to:[0-7]
+larry:[0-8]
+runs:[0-9, 0-3]
+
+Search application started
+SearchDomain created: file1.txt
+file4.txt
+file6.dat
+file3.dat
+file2.doc
+file5.doc
+
+Complete index of words: small:[0-5]
+prefer:[0-11]
+line:[0-8, 0-10, 0-9, 0-13, 0-2]
+gold:[0-3]
+confused:[0-1, 0-10]
+across:[0-3, 0-10]
+that:[0-8]
+not:[0-3, 0-4, 0-7]
+appreciate:[0-8]
+and:[0-5]
+does:[0-6]
+chipmunk:[0-2, 0-1, 0-13]
+by:[0-5]
+scampers:[0-2, 0-5]
+baffled:[0-4]
+if:[0-9]
+you:[0-10]
+striped:[0-1, 0-7, 0-6]
+a:[0-0, 0-4, 0-11, 0-7, 0-0, 0-3, 0-12]
+or:[0-7]
+king:[0-11]
+like:[0-6]
+was:[0-3]
+telephone:[0-5, 0-4, 0-8, 0-12, 0-1]
+is:[0-2, 0-2]
+being:[0-9]
+the:[0-0, 0-4, 0-0, 0-9, 0-0, 0-6, 0-0]
+with:[0-2, 0-11]
+squirrel:[0-1, 0-7, 0-8, 0-1, 0-4]
+wire:[0-6, 0-5]
+belongs:[0-6]
+to:[0-7]
+larry:[0-8]
+runs:[0-9, 0-3]
+

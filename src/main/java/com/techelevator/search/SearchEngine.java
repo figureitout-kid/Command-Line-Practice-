@@ -1,7 +1,8 @@
 package com.techelevator.search;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import com.techelevator.util.TELog;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -16,13 +17,42 @@ public class SearchEngine {
 	private SearchDomain sd;
 	private Map<String, List<WordLocation>> indexedWords = null;
 
+	public int getFileId() {
+		return fileId;
+	}
+
+	private int fileId;
 	public SearchEngine(SearchDomain sd) {
 		this.sd = sd;
 		this.indexedWords = new HashMap<>();
+		this.fileId = fileId;
 	}
 	
 	public void indexFiles() throws SearchEngineException, Exception {
 		// Step Five: Index files
+		List<String> filesToIndex = sd.getFiles();
+		for (int i = 0; i < filesToIndex.size(); i++){
+			String fileName = filesToIndex.get(i);
+			try {
+				File file = new File(sd.getFolder(), fileName );
+				if (file.exists() && file.isFile()) {
+					try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+						String line;
+						while ((line = reader.readLine()) != null) {
+							indexWords(fileId, line);
+							// maybe need to incrememnt lines???????
+						}
+					}
+				}
+				else {
+					throw new SearchEngineException( "File not found: " + fileName);
+				}
+			} catch (IOException e) {
+				throw new SearchEngineException( "Error indexing file; " + fileName + ": " + e.getMessage());
+
+			}
+		}
+		TELog.log("Complete index of words: " + indexedWordsToString());
 
 
 	}

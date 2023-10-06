@@ -14,7 +14,7 @@ import java.util.List;
 public class SearchDomain {
 
 	private String folder;
-	private List<String> files;
+	private static List<String> files;
 	
 	/**
 	 * Create a Search Domain of a folder
@@ -31,7 +31,7 @@ public class SearchDomain {
 		return folder;
 	}
 
-	public List<String> getFiles() {
+	public static List<String> getFiles() {
 		return files;
 	}
 
@@ -54,10 +54,24 @@ public class SearchDomain {
 	private List<String> buildDomain() throws SearchDomainException {
 		List<String> files = new ArrayList<>();
 		// Step Three: Complete the buildDomain method
+		try {
+		File folderNew = new File(folder);
+		if (folderNew.exists() && folderNew.isDirectory()) {
+			File[] folderFiles = folderNew.listFiles();
+			if (folderFiles != null){
+				for (File file : folderFiles) {
+					if (file.isFile()) {
+						files.add(file.getName());
+					}
+				}
+			}
 
-
-			
+		} else {
+			throw new SearchDomainException("Invalid folder path.");
+		}
+		} catch (Exception e){
+			throw new SearchDomainException("Error building domain." + e.getMessage());
+		}
 		return files;
 	}
-	
 }

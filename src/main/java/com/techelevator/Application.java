@@ -36,7 +36,6 @@ public class Application {
 			List<String> searchResults = searchEngine.search(searchWord);
 
 
-			// made forloop without j-- *********************
 			if (searchResults.isEmpty()){
 				System.out.println("No matching files found for word: " + searchWord);
 			}
@@ -51,9 +50,28 @@ public class Application {
 			
 			// Step Seven: Multiple word search
 			//
-			
-			
-			
+			SearchEngine searchEngine2 = new SearchEngine(searchDomain);
+			searchEngine2.indexFiles();
+
+			String searchPhrase = "telephone line";
+			List<String> searchResults2 = searchEngine.search(searchPhrase);
+
+			if (searchResults2.isEmpty()){
+				System.out.println("No matching files found for words: " + searchPhrase);
+			}
+			else {
+				System.out.println("Matching files found for words: " + searchPhrase);
+				for (String fileName : searchResults2){
+					System.out.println(fileName);
+				}
+			}
+
+
+
+
+
+
+
 		}
 		catch (Exception e) {
 			e.printStackTrace();

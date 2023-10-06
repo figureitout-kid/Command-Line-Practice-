@@ -55,19 +55,16 @@ public class SearchDomain {
 		List<String> files = new ArrayList<>();
 		// Step Three: Complete the buildDomain method
 		try {
-		File folderNew = new File(folder);
+			File folderNew = new File(folder);
 		if (folderNew.exists() && folderNew.isDirectory()) {
 			File[] folderFiles = folderNew.listFiles();
 			if (folderFiles != null){
 				for (File file : folderFiles) {
 					if (file.isFile()) {
-						files.add(file.getName());
+						files.add(file.getPath());
 					}
 				}
 			}
-
-		} else {
-			throw new SearchDomainException("Invalid folder path.");
 		}
 		} catch (Exception e){
 			throw new SearchDomainException("Error building domain." + e.getMessage());

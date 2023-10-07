@@ -61,6 +61,7 @@ public class SearchDomain {
 			if (folderFiles != null){
 				for (File file : folderFiles) {
 					if (file.isFile()) {
+//						we had get name here, only copying the name of the files not the actual file contents
 						files.add(file.getPath());
 					}
 				}

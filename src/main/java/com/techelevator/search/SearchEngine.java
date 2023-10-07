@@ -44,41 +44,6 @@ public class SearchEngine {
 			}
 		}
 		TELog.log("Indexed words:\n" + indexedWordsToString());
-//		for (int i = 0; i < filesToIndex.size(); i++){
-//			String fileName = filesToIndex.get(i);
-//			try {
-//				File file = new File(sd.getFolder(), fileName );
-//				if (file.exists() && file.isFile()) {
-//					try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-//						String line;
-//						while ((line = reader.readLine()) != null) {
-//							indexWords(fileId, line);
-//							// maybe need to incrememnt lines???????
-//						}
-//					}
-////				else {
-////					throw new SearchEngineException( "File not found: " + fileName);
-////				}
-//			} catch (IOException e) {
-//				throw new SearchEngineException( "Error indexing file; " + fileName + ": " + e.getMessage());
-//
-//			}
-//		}
-//		TELog.log("Complete index of words: " + indexedWordsToString());
-
-//		for (int fileID = 0; fileID < sd.getFiles().size(); fileID++) {
-//			String fileName = sd.getFiles().get(fileID);
-//			try (Scanner scan = new Scanner(new File(fileName))) {
-//				while (scan.hasNextLine()) {
-//					String line = scan.nextLine();
-//					indexWords(fileID, line);
-//				}
-//			}
-//			catch (FileNotFoundException e) {
-//				throw new SearchEngineException("Exception: File '" + fileName + "' is not found.");
-//			}
-//		}
-//		TELog.log("Indexed words:\n" + indexedWordsToString());
 	}
 
 	
